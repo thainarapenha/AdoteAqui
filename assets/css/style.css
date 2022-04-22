@@ -216,7 +216,7 @@ footer {
     font-size: 20px;
 }
 /* ================================ ÁREAS COM HOVER ================================ */
-figure img:hover, nav ul li:hover, #card-pet:hover{
+figure img:hover, .inicio img:hover, nav ul li:hover, #card-pet:hover{
     -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
