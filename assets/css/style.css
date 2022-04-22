@@ -1,0 +1,230 @@
+/*======== reset da página ========*/
+*{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+}
+/*definindo uma fonte para a página inteira*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+}
+/*redefeinindo caracteristicas do link*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/*aplicando caracteristicas de espaços na barra de menu*/
+header{
+    display: flex;
+    align-items: center;
+    padding: 40px 80px 0 80px;
+    justify-content: space-between;
+    background-color: rgb(23, 71, 158);
+}
+/*deixando a ul flexível*/
+nav ul{
+    display: flex;
+}
+/*redefinindo caracteristicas do li presente na ul*/
+nav ul li{
+    padding: 0 20px;
+    list-style: none;
+    font-size: 20px;
+}
+figure img{
+    width: 100%;
+    max-width: 150px;
+}
+/* ================================ AREA COM CONTEÚDO FLEXÍVEL ================================ */
+/*definindo caracteristicas de espaço/tamanhos/cor para área da main*/
+.containerComoFunciona, .containerInfo, .containerAdocao, .formInteresse{ /*, .areaParceiros*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
+/* ================================ AREAS COM TÍTULOS EM COMUM ================================ */
+/*alinhando o título dessas áreas*/
+.comoFunciona, .adocao, .numerosAjuda, .nossosParceiros h1{
+    font-size: 24px;
+    padding: 20px 0;
+    color: rgb(23, 71, 158);
+    text-align: center;
+}
+/*================ banner principal ================ */
+/*definindo caracteristicas de espaço/tamanhos/cor para área da main*/
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    color: white;
+    background-color: rgb(23, 71, 158);
+}
+/*definindo tamanho da img do banner da página*/
+.inicio h1{
+    font-size: 40px;
+}
+/*definindo tamanho da img do banner da página*/
+.inicio img{
+    width: 100%;
+    max-width: 300px;
+    height: 296px;
+}
+/*definindo tamanho da div para banner da página*/
+.inicio div {
+    width: 500px;
+    height: 300px;
+}
+/*definindo caracteristicas para o parágrafo da main*/
+.inicio div p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* ================ como funciona ================ *
+/* definindo caracteristicas para títulos dentro dos "cards" de info */
+.containerComoFunciona h1{
+    font-size: 18px;
+}
+/*definindo tamanho das img de como funciona ("card" de info)*/
+.containerComoFunciona div img {
+    width: 100px;
+    height: 100px;
+}
+/* definindo espaços/tamanhos para "cards" de informações */
+#card-comoFunciona{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+}
+/* ================ area de numeros ================ */
+/*definindo cor de fundo da area com num de ajudas*/
+.numerosAjuda{
+    background-color: rgb(23, 71, 158);
+}
+/*definindo cor do h1 da area com num de ajudas*/
+.numerosAjuda h1{
+    color: white;
+}
+/*definindo caracteristicas de paragrafo da area com num de ajudas*/
+.numerosAjuda p{
+    color: white;
+    font-size: 14px;
+    font: 200;
+}
+/*definindo tamanho dos cards com num de ajudas*/
+#card-info{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+}
+/*definindo tamanho dos h1 dos cards*/
+#card-info h1{
+    font-size: 40px;
+}
+/* ================ area de adoção ================ */
+/*definindo tamanho das img*/
+.containerAdocao div img {
+    width: 200px;
+    height: 80%;
+}
+/* definindo espaços/tamanhos para "cards" de adoção */
+#card-pet{
+    border-radius: 2%;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px #aab4af;
+    color:#000000;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+}
+/* ================ formulário de interesse ================ */
+/*definindo tamanho diferente para essa área*/
+.formInteresse{
+    height: 700px;
+}
+/*definindo caracteristicas para o h1*/
+.formInteresse h1{
+    font-size: 40px;
+    color: rgb(23, 71, 158);
+}
+/*definindo caracteristicas para o paragrafo*/
+.formInteresse p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+/*definindo tamanho para a div*/
+.formInteresse  div {
+    width: 450px;
+    text-align: left;
+    
+}
+/*definindo tamanho da imagem ao lado do forms*/
+.formInteresse img{
+    width: 100%;
+    max-width: 350px;
+    height: 346px;
+}
+/*definindo espaçamento para a o forms*/
+.formInteresse form {
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(23, 71, 158);
+}
+/*definindo caracteristicas para campos do forms*/
+.formInteresse  form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 9px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+/*definindo caracteristicas para a o botao*/
+.formInteresse  form button {
+    width: 103%;
+    margin: 10px 0;
+    height: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background: rgb(23, 71, 158);
+}
+/* ================ rodapé ================ */
+/*definindo tamanho das img*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: rgb(23, 71, 158);
+    color: white;
+    font-size: 20px;
+}
+/* ================================ ÁREAS COM HOVER ================================ */
+figure img:hover, nav ul li:hover, #card-pet:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #f49833;
+}
+.inicio img:hover, .formInteresse form button:hover {
+    cursor: pointer;
+}
